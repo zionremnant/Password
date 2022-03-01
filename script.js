@@ -44,10 +44,20 @@ var userInput
 var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var capital = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numeric = [0,1,2,3,4,5,6,7,8,9];
-var isSpecialCharaters = ["!","@","#","$","%","^","&","*"];
+var specialCharaters = ["!","@","#","$","%","^","&","*"];
 
-if (confirm("Does your password require lowercase?"))
-
+if(confirm("Would you like to include lowercase letters?")== true) {
+  userInput.push(lowercase)
+}
+if(confirm("Would you like to include capital letters?")== true) {
+  userInput.push(capital)
+}
+if(confirm("Would you like to include numbers?")== true) {
+  userInput.push(numeric)
+}
+if(confirm("Would you like to include special characters?")== true) {
+  userInput.push(specialCharaters)
+}
 
 
 
