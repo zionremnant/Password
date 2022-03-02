@@ -1,11 +1,14 @@
 var generateBtn = document.querySelector("#generate")
-generateBtn.addEventListener("click", writePassword);
-function writePassword(){
+// Write password to the #password input
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 // Assignment Code
 var userInput = []
 var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
@@ -20,6 +23,10 @@ function generatePasswor(){
     alert("Please enter a number between 8 and 128");
     return generatePassword;
   }
+  // return numberOfChars
+
+  // validateCharLength(numberOfChars);
+
   var lowercase = confirm("Would you like to include lowercase letters?");
   var capital = confirm("Would you like to include capital letters?");
   var numeric = confirm("Would you like to include numbers?");
@@ -39,7 +46,7 @@ function generatePasswor(){
 
 console.log(numberOfChars);
 
-  for (var i = 0; i < parseInt(numberOfChars); i++){
+for (var i = 0; i < parseInt(numberOfChars); i++){
     var random = Math.floor(Math.random()*userInput.length);
     password += userInput[random];
   }
