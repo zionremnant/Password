@@ -15,7 +15,5 @@ Create an application that enables users to generate random passwords based on c
 
 ## Links
 
-- GitHub: `https://github.com/zionremnant`
-
-https://zionremnant.github.io/Password/
-https://github.com/zionremnant/Password
+- https://zionremnant.github.io/Password/
+- https://github.com/zionremnant/Password
